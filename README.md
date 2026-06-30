@@ -1,6 +1,6 @@
 # GenAI Intern Assistant — Improved Version
 
-A clean Flask + OpenAI chatbot project with a modern responsive frontend, chat history, better error handling, and safe API-key usage through `.env`.
+A clean Flask + OpenAI chatbot project with a modern responsive frontend, chat history, better error handling and safe API-key usage through `.env`.
 
 ## Setup in VS Code
 
