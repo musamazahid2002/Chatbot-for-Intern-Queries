@@ -16,6 +16,7 @@ pip install -r requirements.txt
 copy .env.example .env     # Windows
 # cp .env.example .env      # macOS/Linux
 ```
+
 <img width="1586" height="992" alt="Gen AI Assistant" src="https://github.com/user-attachments/assets/48dbb3d2-850c-40c9-b78d-f608b5681d26" />
 
 
