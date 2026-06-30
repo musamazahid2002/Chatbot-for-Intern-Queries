@@ -2,6 +2,9 @@
 
 A clean Flask + OpenAI chatbot project with a modern responsive frontend, chat history, better error handling and safe API-key usage through `.env`.
 
+<img width="1536" height="1024" alt="Gen AI Intern Assistant" src="https://github.com/user-attachments/assets/a3ea5c87-4275-406c-b840-b81265673c35" />
+
+
 ## Setup in VS Code
 
 ```bash
@@ -13,6 +16,8 @@ pip install -r requirements.txt
 copy .env.example .env     # Windows
 # cp .env.example .env      # macOS/Linux
 ```
+<img width="1586" height="992" alt="Gen AI Assistant" src="https://github.com/user-attachments/assets/48dbb3d2-850c-40c9-b78d-f608b5681d26" />
+
 
 Open `.env` and add your API key:
 
