@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GenAI Intern Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">AI</div>
+        <div>
+          <h1>GenAI Intern</h1>
+          <p>Smart learning assistant</p>
+        </div>
+      </div>
+
+      <div class="status-card">
+        <span class="pulse"></span>
+        <div>
+          <strong id="modelName">Checking model...</strong>
+          <p id="apiStatus">Connecting to backend</p>
+        </div>
+      </div>
+
+      <section class="tips">
+        <h2>Try asking</h2>
+        <button class="prompt">Explain EF Core migrations with code</button>
+        <button class="prompt">Fix my Python Flask error</button>
+        <button class="prompt">Create a study plan for German C1</button>
+        <button class="prompt">Review my internship project idea</button>
+      </section>
+
+      <button id="clearBtn" class="clear-btn">Clear chat</button>
+    </aside>
+
+    <section class="chat-panel">
+      <header class="chat-header">
+        <div>
+          <span class="eyebrow">Powered by OpenAI API</span>
+          <h2>How can I help you today?</h2>
+        </div>
+        <div class="badge">High Quality Mode</div>
+      </header>
+
+      <div id="messages" class="messages" aria-live="polite"></div>
+
+      <form id="chatForm" class="composer">
+        <textarea id="messageInput" placeholder="Ask anything about code, internship tasks, German learning, projects..." rows="1"></textarea>
+        <button id="sendBtn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
